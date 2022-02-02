@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: var(--very-light-gray);
+    max-height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr auto;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+h3 {
+    color: var(--very-dark-blue);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 2em;
+    padding: 3em 0;
+}
+.container h1 {
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+.container h1 span {
+    font-weight: 200;
+    color: var(--grayish-blue);
+}
+.container p {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--grayish-blue);
+}
+
+.card-holder {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    max-height: 500px;
+}
+
+.card-holder__supervisor {
+    border-top: 3px solid var(--cyan);
+    background-color: #fff;
+    padding: 1.3rem;
+    width: 340px;
+    height: 220px;
+    position: relative;
+    top: 150px;
+    left: -370px;
+    -webkit-box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21); 
+    box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21);
+}
+.card-holder__supervisor p {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--grayish-blue);
+}
+.card-holder__supervisor--icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1.5rem;
+}
+
+.card-holder__teambuilder {
+    border-top: 3px solid var(--red);
+    background-color: #fff;
+    padding: 1.3rem;
+    width: 340px;
+    height: 220px;
+    position: relative;
+    top: -200px;
+    -webkit-box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21); 
+    box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21);
+}
+.card-holder__teambuilder p {
+    text-align: left;
+    color: var(--grayish-blue);
+}
+.card-holder__teambuilder--icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1.5rem;
+}
+
+.card-holder__karma {
+    border-top: 3px solid var(--orange);
+    background-color: #fff;
+    padding: 1.3rem;
+    width: 340px;
+    height: 220px;
+    position: relative;
+    top: -170px;
+    -webkit-box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21); 
+    box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21);
+}
+.card-holder__karma p {
+    text-align: left;
+    color: var(--grayish-blue);
+}
+.card-holder__karma--icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1.5rem;
+}
+
+.card-holder__calculator {
+    border-top: 3px solid var(--blue);
+    background-color: #fff;
+    padding: 1.3rem;
+    width: 340px;
+    height: 220px;
+    position: relative;
+    top: -510px;
+    left: 370px;
+    -webkit-box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21); 
+    box-shadow: 3px 15px 9px -1px rgba(143,143,143,0.21);
+}
+
+.card-holder__calculator p {
+    text-align: left;
+    color: var(--grayish-blue);
+}
+.card-holder__calculator--icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1.5rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1085px) {
+    body {
+        height: 100vh;
+    }
+
+    .container p {
+        max-width: 350px;
+        font-size: 1.3rem;
+    }
+
+    .card-holder {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        max-height: 1050px;
+    }
+    .card-holder__supervisor {
+        top: 0px;
+        left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .card-holder__teambuilder {
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card-holder__karma {
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .card-holder__calculator {
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+    }
+    .attribution {
+        position: relative;
+        bottom: 30px;
+    }
+}
