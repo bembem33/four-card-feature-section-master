@@ -75,7 +75,6 @@ h3 {
 }
 .card-holder__supervisor p {
     text-align: left;
-    font-size: 1rem;
     line-height: 1.6;
     color: var(--grayish-blue);
 }
