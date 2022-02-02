@@ -63,6 +63,7 @@ h3 {
 
 .card-holder__supervisor {
     border-top: 3px solid var(--cyan);
+    border-radius: 5px;
     background-color: #fff;
     padding: 1.3rem;
     width: 340px;
@@ -87,6 +88,7 @@ h3 {
 
 .card-holder__teambuilder {
     border-top: 3px solid var(--red);
+    border-radius: 5px;
     background-color: #fff;
     padding: 1.3rem;
     width: 340px;
@@ -110,6 +112,7 @@ h3 {
 
 .card-holder__karma {
     border-top: 3px solid var(--orange);
+    border-radius: 5px;
     background-color: #fff;
     padding: 1.3rem;
     width: 340px;
@@ -133,6 +136,7 @@ h3 {
 
 .card-holder__calculator {
     border-top: 3px solid var(--blue);
+    border-radius: 5px;
     background-color: #fff;
     padding: 1.3rem;
     width: 340px;
